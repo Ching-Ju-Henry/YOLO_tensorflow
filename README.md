@@ -1,6 +1,6 @@
 # YOLO on Tensorflow
 This YOLO code, I forked from https://github.com/gliese581gg/YOLO_tensorflow
-</br> (1) I only use it for trsting without any changing
+</br> (1) I only use it for testing without any changing
 </br> (2) This code without training code, so if I want to train it, using https://github.com/hizhangp/yolo_tensorflow or see what &emsp; &emsp; 'Introduction' said.
 
 ### Introduction
