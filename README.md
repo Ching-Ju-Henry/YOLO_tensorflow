@@ -1,35 +1,27 @@
-#YOLO_tensorflow
+# YOLO on Tensorflow
+This YOLO code, I forked from https://github.com/gliese581gg/YOLO_tensorflow
+</br> (1) I only use it for trsting without any changing
+</br> (2) This code without training code, so if I want to train it, using https://github.com/hizhangp/yolo_tensorflow or see what &emsp; &emsp; 'Introduction' said.
 
-(Version 0.3, Last updated :2017.02.21)
-
-###1.Introduction
-
+### Introduction
 This is tensorflow implementation of the YOLO:Real-Time Object Detection
-
 It can only do predictions using pretrained YOLO_small & YOLO_tiny network for now.
-
 (+ YOLO_face detector from https://github.com/quanhua92/darknet )
-
 I extracted weight values from darknet's (.weight) files.
-
 My code does not support training. Use darknet for training.
-
 Original code(C implementation) & paper : http://pjreddie.com/darknet/yolo/
 
-###2.Install
+### Install
 (1) Download code
 
 (2) Download YOLO weight file from
-
-YOLO_small : https://drive.google.com/file/d/0B2JbaJSrWLpza08yS2FSUnV2dlE/view?usp=sharing
-
-YOLO_tiny  : https://drive.google.com/file/d/0B2JbaJSrWLpza0FtQlc3ejhMTTA/view?usp=sharing
-
-YOLO_face : https://drive.google.com/file/d/0B2JbaJSrWLpzMzR5eURGN2dMTk0/view?usp=sharing
+</br> YOLO_small : https://drive.google.com/file/d/0B2JbaJSrWLpza08yS2FSUnV2dlE/view?usp=sharing
+</br> YOLO_tiny  : https://drive.google.com/file/d/0B2JbaJSrWLpza0FtQlc3ejhMTTA/view?usp=sharing
+</br> YOLO_face : https://drive.google.com/file/d/0B2JbaJSrWLpzMzR5eURGN2dMTk0/view?usp=sharing
 
 (3) Put the 'YOLO_(version).ckpt' in the 'weight' folder of downloaded code
 
-###3.Usage
+### Usage
 
 (1) direct usage with default settings (display on console, show output image, no output file writing)
 
@@ -62,22 +54,6 @@ YOLO_face : https://drive.google.com/file/d/0B2JbaJSrWLpzMzR5eURGN2dMTk0/view?us
 	yolo.detect_from_file(filename)
 	yolo.detect_from_cvmat(cvmat)
 
-###4.Requirements
-
+### Requirements
 - Tensorflow
 - Opencv2
-
-###5.Copyright
-
-According to the LICENSE file of the original code, 
-- Me and original author hold no liability for any damages
-- Do not use this on commercial!
-
-###6.Changelog
-2016/02/15 : First upload!
-
-2016/02/16 : Added YOLO_tiny, Fixed bug that ignores one of the boxes in grid when both boxes detected valid objects
-
-2016/08/26 : Uploaded weight file converter! (darknet weight -> tensorflow ckpt)
-
-2017/02/21 : Added YOLO_face (Thanks https://github.com/quanhua92/darknet)
